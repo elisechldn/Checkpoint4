@@ -1,0 +1,14 @@
+.h1_title-login{
+    font-family: $headings-font-family;
+}
+
+.div_login-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.label-login{
+    padding: 0.5rem;
+}
