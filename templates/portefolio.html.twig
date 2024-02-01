@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="{{ asset('build/images/logo-wild-code-school.svg') }}"/>
+        <title>
+            {% block title %}Projet 3 Name{% endblock %}
+        </title>
+                {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+            </head>
+    <body>
+    <header class="pf-nav">
+        {{ include 'includes/_navbar1.html.twig' }}
+    </header>
+    <section class="pf-presentation">
+        <h1 class="tracking-in-contract">Elise Chaldjian</h1>
+    </section>
+    <section class="pf-formation">
+        <h2>Mon parcours</h2>
+        {{ include 'includes/_parcours2.html.twig' }}
+    </section>
+    <section class="pf-projet">
+        <h2>Mes projets</h2>
+        {{ include 'includes/_projet3.html.twig' }}
+    </section>
+
+    </body>
+</html>

@@ -1,3 +1,9 @@
 //start coding by removing this file and adding yours ;)
-@import "variables";
-@import "wcs";
+@import "variables.scss";
+@import "login.scss";
+@import "portefolio.scss";
+@import "_navbar.scss";
+@import "_formation.scss";
+@import "_projet.scss";
+@import "_detail-projet.scss";
+@import "~bootstrap/scss/bootstrap";

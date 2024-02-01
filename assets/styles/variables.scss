@@ -1,7 +1,33 @@
-$basteleur-font-path: "../fonts";
-
+/* Choix de fonts */
 @font-face {
     src: url(../fonts/Basteleur-Moonlight.woff2) format("woff2");
 
     font-family: "Basteleur Moonlight";
 }
+
+@font-face {
+    src: url(../fonts/Basteleur-Bold.woff2) format("woff2");
+
+    font-family: "Basteleur Bold";
+}
+
+$headings-font-family: 'Basteleur Moonlight';
+/* Textes et titres */
+$h1-font-size: 4.5rem;
+$h2-font-size: 3.75rem;
+$h3-font-size: 3rem;
+$h4-font-size: 2.25rem;
+$h5-font-size: 1.5rem;
+$btn-font-size: 1.25rem;
+$p-size-desktop: 1rem;
+/* Couleurs */
+$bg-main-color:#4D724D;
+$bg-light-color:#FFFFDB;
+$h-color: #212353;
+$p-color: #343A40;
+$btn-color: #9c69e2;
+$btn-color-hover: #f063a7;
+/* Forme cards*/
+$radius-card: 0rem 1.25rem 0rem 1.25rem;
+/*Effets*/
+$blur:blur(0.5rem);
