@@ -1,0 +1,22 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+{# templates/admin/dashboard.html.twig #}
+
+{% block body_wrapper %}
+    {% block page_header %}{% endblock %}
+    {% block main_content %}
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Bienvenue sur le tableau de bord</h1>
+                        <ul>
+                            <li><a href="{{ path('admin_easyadmin', {'entity': 'Formation'}) }}">Gérer les Formations</a></li>
+                            <li><a href="{{ path('admin_easyadmin', {'entity': 'Experience'}) }}">Gérer les Expériences</a></li>
+                            {# Ajoutez d'autres liens pour d'autres entités #}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}
