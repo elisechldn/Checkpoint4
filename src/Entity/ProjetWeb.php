@@ -21,7 +21,7 @@ class ProjetWeb
     #[ORM\Column(length: 255)]
     private ?string $date = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 1000)]
     private ?string $descriptif = null;
 
     #[ORM\ManyToMany(targetEntity: Stack::class, inversedBy: 'projetWebs')]

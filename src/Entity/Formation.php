@@ -22,9 +22,6 @@ class Formation
     #[ORM\Column(length: 50)]
     private ?string $date = null;
 
-    #[ORM\Column(length: 150)]
-    private ?string $diplome = null;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -62,18 +59,6 @@ class Formation
     public function setDate(string $date): static
     {
         $this->date = $date;
-
-        return $this;
-    }
-
-    public function getDiplome(): ?string
-    {
-        return $this->diplome;
-    }
-
-    public function setDiplome(string $diplome): static
-    {
-        $this->diplome = $diplome;
 
         return $this;
     }
