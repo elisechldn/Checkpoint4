@@ -1,0 +1,15 @@
+.nav-container{
+    position: sticky !important;
+}
+
+.navbar-link {
+    font-family: $headings-font-family;
+    list-style: none;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: $btn-font-size;
+}
+
+/*navbar-item{
+}*/

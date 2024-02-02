@@ -1,13 +1,23 @@
-<div class="div-left_pf">
+<div class="div-left-pf">
 	<div
-		class="div-formation_pf">
+		class="div-parcours-pf">
+		{% for formation in formations %}
         {# Code du contenu ici #}
+		<h3 class="parcours-title">{{ formation.nomDiplome }}</h3>
+		<h4 class="parcours-subtitle">{{ formation.ecole }}</h4>
+		<p>{{ formation.date }}</p>
+		{% endfor %}
 	</div>
 </div>
 {# Div de droite = container de la div des infos #}
-<div class="div-right_pf">
+<div class="div-right-pf">
 	<div
-		class="div-experience_pf">
+		class="div-parcours-pf">
         {# Code du contenu ici #}
+		{% for experience in experiences %}
+		<h3 class="parcours-title">{{ experience.poste }}</h3>
+		<h4 class="parcours-subtitle">{{ experience.entreprise }}</h4>
+		<p>{{ experience.date }}</p>
+		{% endfor %}
 	</div>
 </div>

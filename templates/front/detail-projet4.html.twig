@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" type="image/png" href="{{ asset('build/images/logo-wild-code-school.svg') }}"/>
+		<title>
+			{% block title %}Portfolio - Elise
+			{% endblock %}
+		</title>
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		{% include 'includes/_navbar1.html.twig' %}
+		<section class="pf-projet-detail" id="pf-projet">
+			<div class="div-left-pf">
+				<div
+					class="div-photo-projet_pf">{# Code du contenu ici #}
+				</div>
+			</div>
+			{# Div de droite = container de la div des infos #}
+			<div class="div-right-pf">
+				<div class="div-presentation-projet_pf">
+					<h1>{{ projets.projet }}</h1>
+					<h2>Description du projet</h2>
+					<p>{{ projets.descriptif }}</p>
+					<h3>Les stacks utilisées</h3>
+					{% for stack in projets.stacks %}
+						<div class="stack-org">
+							<p class="stack-org-name">{{ stack.nom }}</p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
