@@ -9,11 +9,12 @@ use App\Repository\FormationRepository;
 use App\Repository\ExperienceRepository;
 use App\Repository\ProjetWebRepository;
 use App\Repository\StackRepository;
+use App\Entity\ProjetWeb;
 
-#[Route('/accueil', name: 'accueil_')]
+#[Route('/', name: 'portefolio_')]
 class FrontController extends AbstractController
 {
-    #[Route('/', name: 'index')]
+    #[Route('/accueil', name: 'index')]
     public function index(
         FormationRepository $formationRepo,
         ExperienceRepository $xpRepo,
@@ -26,6 +27,14 @@ class FrontController extends AbstractController
             'experiences' => $xpRepo->findAll(),
             'projets' => $projetWebRepo->findAll(),
             'stacks' => $stackRepo->findAll(),
+        ]);
+    }
+
+    #[Route('projet/{id}', methods: ['GET'], name: 'projet')]
+    public function showProjets(ProjetWeb $projet): Response
+    {
+        return $this->render('front/detail-projet4.html.twig', [
+            'projets' => $projet,
         ]);
     }
 }

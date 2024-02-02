@@ -1,3 +1,8 @@
+.cards-disposition{
+    display: flex;
+    flex-direction: row;
+}
+
 .card_projet {
     display: flex;
     flex-direction: column;
@@ -7,6 +12,7 @@
     border-radius: $radius-card;
     background-color: #FFFFFF;
     margin-bottom: 2%;
+    margin-right: 15px;
 }
 
 .card-header_projet {
