@@ -1,0 +1,46 @@
+.pf-formation{
+    background-color: $bg-light-color;
+    height: auto;
+}
+
+.parcours-title{
+    font-size: $h3-font-size;
+    font-family: "Basteleur Moonlight";
+}
+
+.parcours-subtitle{
+    font-size:$h4-font-size;
+}
+
+.pf-formation {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+}
+
+.div-left-pf {
+    background-color: $bg-light-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 50%;
+}
+
+.div-right-pf {
+    background-color: $bg-light-color;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    margin-top:5rem;
+}
+
+.div-parcours-pf {
+    background-color: transparent;
+    height: auto;
+    padding: 10vh 5vw 5vh 5vw;
+}
