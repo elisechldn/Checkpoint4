@@ -19,18 +19,19 @@
 	<body>
 		{% include 'includes/_navbar1.html.twig' %}
 		<section class="pf-projet-detail" id="pf-projet">
-			<div class="div-left-pf">
+			<div class="div-left-pf projet-photo">
 				<div
-					class="div-photo-projet_pf">{# Code du contenu ici #}
+					class="div-parcours-pf">
+					{# Code du contenu ici #}
 				</div>
 			</div>
 			{# Div de droite = container de la div des infos #}
 			<div class="div-right-pf">
-				<div class="div-presentation-projet_pf">
-					<h1>{{ projets.projet }}</h1>
-					<h2>Description du projet</h2>
-					<p>{{ projets.descriptif }}</p>
-					<h3>Les stacks utilisées</h3>
+				<div class="div-parcours-pf">
+					<h1 class="card-projet-title">{{ projets.projet }}</h1>
+					<h2 class="card-projet-subtitle">Description du projet</h2>
+					<p class="card-description-projet">{{ projets.descriptif }}</p>
+					<h3 class="card-stack-title">Les stacks utilisées</h3>
 					{% for stack in projets.stacks %}
 						<div class="stack-org">
 							<p class="stack-org-name">{{ stack.nom }}</p>

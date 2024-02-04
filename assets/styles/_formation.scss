@@ -1,15 +1,9 @@
 .pf-formation{
-    background-color: $bg-light-color;
     height: auto;
 }
 
-.parcours-title{
-    font-size: $h3-font-size;
-    font-family: "Basteleur Moonlight";
-}
-
-.parcours-subtitle{
-    font-size:$h4-font-size;
+.parcours-date{
+    font-size: $p-size-desktop;
 }
 
 .pf-formation {
@@ -21,7 +15,6 @@
 }
 
 .div-left-pf {
-    background-color: $bg-light-color;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,7 +24,6 @@
 }
 
 .div-right-pf {
-    background-color: $bg-light-color;
     position: fixed;
     right: 0;
     height: 100vh;
@@ -42,4 +34,11 @@
     background-color: transparent;
     height: auto;
     padding: 10vh 5vw 5vh 5vw;
+}
+
+@media only screen and (max-width:600px) {
+    .pf-formation{
+        flex-direction: column;
+    }
+    
 }

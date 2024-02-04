@@ -2,12 +2,44 @@ body {
   background-color: $bg-main-color;
 }
 
+h1, h2, h3, h4{
+  @include titleStyle;
+}
+
+h1{
+  font-size: $h1-font-size;
+}
+
+h2{
+  font-size: $h2-font-size;
+}
+
+h3{
+  font-size: $h3-font-size;
+}
+
+h4{ 
+  font-size: $h4-font-size;
+}
+
+h5{
+  font-size: $h5-font-size;
+}
+
 .title-pf{
-  margin:2vh 0 0 5vw;
   z-index: 99;
 }
 .pf-presentation{
-  height:35vh;
+  display:flex;
+  flex-direction: column;
+}
+
+.presentation-intro{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:80vh;
 }
 
 .tracking-in-contract {

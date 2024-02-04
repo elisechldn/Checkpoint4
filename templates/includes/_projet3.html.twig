@@ -1,29 +1,24 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-<div class="carousel-inner">
-    <div class="cards-disposition">
+<div class="cards-disposition">
 	{% for projet in projets %}
 		<div class="card_projet col-md-4">
 			<div class="card-header_projet">
-				<div class="card-header-hover_projet">
-				{#<img src="" alt="card_image" class="card-image_projet">#}
-				<a href="{{ path('portefolio_projet', {id:projet.id}) }}" class="uk-button card-button_projet">Voir le projet</a>
+				<div
+					class="card-header-hover_projet">
+					<img src="C:\Users\elise\Documents\WildCodeSchool\Checkpoint4\logo-strashelp-300px.png" alt="card_image" class="card-image_projet">
+					<a href="{{ path('portefolio_projet', {id:projet.id}) }}" class="btn btn-primary card-button_projet">Voir le projet</a>
 				</div>
 			</div>
 			<div class="card-body_projet">
 				<h5 class="card-title_projet">{{ projet.projet }}</h5>
 				<p class="card-description_projet">
-				{{ projet.descriptif }}</p>
+					{{ projet.descriptif }}</p>
 			</div>
 			<div class="card-footer_projet">
-				<div class="card-info_projet">
+				<div
+					class="card-info_projet">
 					{# <p class="card-category_projet">
-						{{ stack.projet.nom }}
-					</p> #}
+											{{ stack.projet.nom }}
+										</p> #}
 					<p class="card-date-projet">
 						{{ projet.date }}
 					</p>
@@ -31,14 +26,12 @@
 			</div>
 		</div>
 	{% endfor %}
-</div>
-</div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>

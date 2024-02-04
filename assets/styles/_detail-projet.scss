@@ -1,3 +1,22 @@
+.card-projet-title{
+    font-size: $h1-font-size;
+    color: $font-color;
+}
+
+.card-projet-subtitle{
+    font-size: $h2-font-size;
+    color: $font-color;
+}
+
+.card-stack-title{
+    font-size: $h3-font-size;
+    color: $font-color;
+}
+
+.card-description-projet{
+    color: $font-color;
+}
+
 .pf-projet-detail {
     display: flex;
     flex-direction: column;
@@ -6,42 +25,16 @@
     width: 100%;
 }
 
-.div-left-pf {
-    background-color: $bg-light-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: auto;
-    width: 50%;
-}
-
-.div-photo-projet_pf {
-    background-color: transparent;
-    height: auto;
-    padding: 10vh 5vw 5vh 5vw;
-}
-
-.div-right-pf {
-    background-color: $bg-light-color;
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    width: 50%;
-}
-
-.div-presentation-projet_pf{
-    background-color: transparent;
-    height: auto;
-    padding: 10vh 5vw 5vh 5vw;
+.projet-photo {
+    background-color: $font-color;
 }
 
 .stack-org{
     display: inline-block;
-
 }
 
 .stack-org-name {
     font-family: "Basteleur Moonlight";
     padding:0.5rem;
+    color: $font-color;
 }
