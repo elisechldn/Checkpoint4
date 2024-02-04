@@ -1,6 +1,6 @@
-<div class="div-left-pf">
+<div class="div-left-pf col">
 	<div
-		class="div-parcours-pf">
+		class="div-parcours-pf row">
 		{% for formation in formations %}
         {# Code du contenu ici #}
 		<h3>{{ formation.nomDiplome }}</h3>
@@ -10,9 +10,9 @@
 	</div>
 </div>
 {# Div de droite = container de la div des infos #}
-<div class="div-right-pf">
+<div class="div-right-pf col">
 	<div
-		class="div-parcours-pf">
+		class="div-parcours-pf row">
         {# Code du contenu ici #}
 		{% for experience in experiences %}
 		<h3>{{ experience.poste }}</h3>

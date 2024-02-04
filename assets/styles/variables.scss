@@ -21,6 +21,13 @@ $h4-font-size: 2.25rem;
 $h5-font-size: 1.5rem;
 $btn-font-size: 1.25rem;
 $p-size-desktop: 1rem;
+/*Textes et titres pour media queries*/
+$h1-phone-size: 3.75rem;
+$h2-phone-size: 3rem;
+$h3-phone-size: 2.50rem;
+$h4-phone-size: 1.5rem;
+$h5-phone-size: 1.25rem;
+$bton-phone-size: 1.15rem;
 /* Couleurs */
 $bg-main-color:#1A3B39;
 $bg-light-color:#FFFFDB;;
@@ -32,9 +39,16 @@ $radius-card: 0rem 1.25rem 0rem 1.25rem;
 /*Effets*/
 $blur:blur(0.5rem);
 $title-margin: 2vh 0 0 5vw;
+$p-margin: 2vh 0 0 5.5vw;
 
 @mixin titleStyle {
     color: $font-color;
     font-family: $headings-font-family;
     margin: $title-margin;
+}
+
+@mixin pStyle {
+    color: $font-color;
+    margin: $p-margin;
+    font-size: $p-size-desktop;
 }
