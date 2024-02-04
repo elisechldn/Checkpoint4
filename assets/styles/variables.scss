@@ -22,13 +22,19 @@ $h5-font-size: 1.5rem;
 $btn-font-size: 1.25rem;
 $p-size-desktop: 1rem;
 /* Couleurs */
-$bg-main-color:#4D724D;
-$bg-light-color:#FFFFDB;
-$h-color: #212353;
-$p-color: #343A40;
-$btn-color: #9c69e2;
+$bg-main-color:#1A3B39;
+$bg-light-color:#FFFFDB;;
+$font-color:#D0FCB3;
+$btn-color: #C44536;
 $btn-color-hover: #C82317;
 /* Forme cards*/
 $radius-card: 0rem 1.25rem 0rem 1.25rem;
 /*Effets*/
 $blur:blur(0.5rem);
+$title-margin: 2vh 0 0 5vw;
+
+@mixin titleStyle {
+    color: $font-color;
+    font-family: $headings-font-family;
+    margin: $title-margin;
+}

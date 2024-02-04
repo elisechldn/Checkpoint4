@@ -24,11 +24,11 @@
 .btn-form {
     margin-top: 0.5rem;
     border: none;
-    background-color: $bg-main-color;
+    background-color: $btn-color;
     size: $btn-font-size;
-}
 
-.btn-form:hover{
-    background-color: $btn-color-hover;
-    border: none;
+    &:hover {
+        background-color: $btn-color-hover;
+        border: none;
+    }
 }
