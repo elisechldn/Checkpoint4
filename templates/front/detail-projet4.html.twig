@@ -18,25 +18,26 @@
 	</head>
 	<body>
 		{% include 'includes/_navbar1.html.twig' %}
-		<section class="pf-projet-detail" id="pf-projet">
-			<div class="div-left-pf projet-photo">
-				<div
-					class="div-parcours-pf">
-					{# Code du contenu ici #}
+		<section class="pf-projet-detail container" id="pf-projet">
+			<div class="orga-projet row">
+				<div class="div-left-pf projet-photo col">
+					<div
+						class="div-parcours-pf col">{# Code du contenu ici #}
+					</div>
 				</div>
-			</div>
-			{# Div de droite = container de la div des infos #}
-			<div class="div-right-pf">
-				<div class="div-parcours-pf">
-					<h1 class="card-projet-title">{{ projets.projet }}</h1>
-					<h2 class="card-projet-subtitle">Description du projet</h2>
-					<p class="card-description-projet">{{ projets.descriptif }}</p>
-					<h3 class="card-stack-title">Les stacks utilisées</h3>
-					{% for stack in projets.stacks %}
-						<div class="stack-org">
-							<p class="stack-org-name">{{ stack.nom }}</p>
-						</div>
-					{% endfor %}
+				{# Div de droite = container de la div des infos #}
+				<div class="div-right-pf col">
+					<div class="div-parcours-pf col">
+						<h1 class="card-projet-title">{{ projets.projet }}</h1>
+						<h2 class="card-projet-subtitle">Description du projet</h2>
+						<p class="card-description-projet">{{ projets.descriptif }}</p>
+						<h4 class="card-stack-title">Les stacks utilisées</h4>
+						{% for stack in projets.stacks %}
+							<div class="stack-org">
+								<p class="stack-org-name">{{ stack.nom }}</p>
+							</div>
+						{% endfor %}
+					</div>
 				</div>
 			</div>
 		</section>
