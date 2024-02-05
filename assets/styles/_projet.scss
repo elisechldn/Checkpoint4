@@ -10,7 +10,7 @@
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: $radius-card;
-    background-color: $bg-light-color;
+    background-color: $font-color;
     margin-bottom: 2%;
     margin-right: 15px;
 }
@@ -54,18 +54,19 @@
     font-family: $headings-font-family;
     font-weight: 700;
     font-size: 1.75rem;
-    color: var(--p-color);
+    color: $bg-main-color;
     margin-bottom: 0.25rem;
 }
 
 .card-description_projet {
     margin-bottom: 0.5rem;
+    color: $bg-main-color;
 }
 
 .card-category_projet {
     font-weight: 600;
-    font-size: var(--h5-size);
-    color: var(--p-color);
+    font-size: $h5-font-size;
+    color: $bg-main-color;
     margin-bottom: 1rem;
 }
 

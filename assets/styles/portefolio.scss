@@ -26,6 +26,10 @@ h5{
   font-size: $h5-font-size;
 }
 
+p{
+  @include pStyle;
+}
+
 .title-pf{
   z-index: 99;
 }
@@ -120,5 +124,32 @@ h5{
     -webkit-transform: translateZ(0) translateX(0);
             transform: translateZ(0) translateX(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width:600px) {
+
+  .pf-presentation{
+    min-height:75vh;
+    height:auto;
+  }
+  h1 {
+    font-size: $h1-phone-size;
+  }
+
+  h2 {
+    font-size: $h2-phone-size
+  }
+
+  h3 {
+    font-size: $h3-phone-size;
+  }
+
+  h4{
+    font-size: $h4-phone-size;
+  }
+
+  h5{
+    font-size: $h5-phone-size;
   }
 }

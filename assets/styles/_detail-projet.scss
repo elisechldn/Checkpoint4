@@ -18,15 +18,9 @@
 }
 
 .pf-projet-detail {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     height: auto;
     width: 100%;
-}
-
-.projet-photo {
-    background-color: $font-color;
 }
 
 .stack-org{
@@ -34,7 +28,20 @@
 }
 
 .stack-org-name {
-    font-family: "Basteleur Moonlight";
     padding:0.5rem;
     color: $font-color;
+}
+
+@media only screen and (max-width:600px) {
+    .projet-photo {
+        display: none;
+    }    
+
+    .card-projet-title {
+        font-size: $h1-phone-size;
+    }
+
+    .div-right-pf {
+        width:100%;
+    }
 }
